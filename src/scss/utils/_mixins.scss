@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/// Управление отзывчивостью.
+/// @access public
+/// @param {String} $breakpoint - точка останова
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+                    type-of($raw-query) == 'string',
+                    unquote($raw-query),
+                    inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'Не указано значение для `#{$breakpoint}`. '
+       + 'Пожалуйста, убедитесь, что точка останова объявлена в карте `$breakpoints`.';
+  }
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder {@content}
+  &::-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+}
+
+@mixin autofill {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus
+  {
+    //-webkit-text-fill-color: green;
+    //-webkit-box-shadow: 0 0 0 1000px $grey inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin absolute-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@mixin absolute-vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin btn-darken($color) {
+    background: darken($color, 10%);
+    box-shadow: inset 0 0 0 2px darken($color, 10%);
+}
+@mixin btn-darken-var($color) {
+  background: var($color);
+  box-shadow: inset 0 0 0 2px var($color);
+}
+//@mixin btn-darken($color) {
+//  background: var($color);
+//  box-shadow: inset 0 0 0 2px var($color);
+//}
+@mixin btn-color-active($color) {
+  background: transparent;
+  color: $color;
+  box-shadow: inset 0 0 0 2px $color;
+}
+@mixin btn-color-active-var($color) {
+  background: transparent;
+  color: var($color);
+  box-shadow: inset 0 0 0 2px var($color);
+}
+@mixin last-right-margin() {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+@mixin last-bottom-margin() {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
