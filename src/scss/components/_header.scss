@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__link {
+    margin-right: 20px;
+  }
+
+  &__calls {
+    flex-direction: column;
+    margin: 5px 20px 0 40px;
+  }
+
+  &__calls {
+    .header__number {
+      font-family: "BebasNeue";
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 27px;
+      letter-spacing: 0.04em;
+    }
+
+    .header__number-text {
+      font-family: 'Geometria';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: white;
+      margin-top: 5px;
+    }
+  }
+}

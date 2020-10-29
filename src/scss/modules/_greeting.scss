@@ -1,0 +1,44 @@
+.greeting {
+  &__title {
+    margin: 510px 0 0;
+    width: 547px;
+  }
+
+  &__texts-wrapper {
+    display: flex;
+    margin: 21px 0 0;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+
+    .greeting__text {
+      display: flex;
+      padding: 10px 16px;
+      width: 300px;
+      height: 330px;
+    }
+  }
+
+  .greeting__line {
+    position: absolute;
+    border: 1px solid #c85664;
+    width: 960px;
+    background-color: #c85664;
+    left: 0;
+
+    &:after {
+      content: "НО...";
+      position: absolute;
+      right: -113px;
+      top: -85px;
+      font-size: 70px;
+      color: #c85664;
+      font-family: "BebasNeue";
+      font-weight: 400;
+    }
+  }
+
+  .greeting__conditions {
+    margin: 200px 0 0;
+  }
+}

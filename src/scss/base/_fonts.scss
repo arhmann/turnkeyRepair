@@ -1,8 +1,31 @@
-//@font-face {
-//  font-family: 'Manrope';
-//  font-style: normal;
-//  font-weight: 400;
-//  src: local(''),
-//  url('./assets/fonts/manrope-regular.woff2') format('woff2'),
-//  url('./assets/fonts/manrope-regular.woff') format('woff');
-//}
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./assets/fonts/Geometria-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Geometria-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./assets/fonts/Geometria-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Geometria-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./assets/fonts/BebasNeueBold.woff2") format("woff2"),
+    url("./assets/fonts/BebasNeueBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./assets/fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("./assets/fonts/BebasNeueRegular.woff") format("woff");
+}

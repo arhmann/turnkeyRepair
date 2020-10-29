@@ -10,11 +10,19 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 375px;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   margin: 0;
   padding-right: 0;
+  font-size: 20px;
+  font-family: 'Geometria';
+  font-weight: 400;
+  background: url('./../../../assets/img/bkg-top.jpg') no-repeat center;
+  background-position: 0 0;
+  background-size: 100%;
+  
 }
 
 h1, h2, h3, h4, h5, p, ul, li {

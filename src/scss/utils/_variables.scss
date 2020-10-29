@@ -1,36 +1,13 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
 
-
-
-
-
-/// Regular font family
 /// @type List
-$text-font-stack: 'Manrope', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
+$text-font-stack: 'Manrope','Arial' !default;
 
 
 /// Colors
-$text-color: #000 !default;
-$green-color: #48BD00 !default;
-$red-color: #E14668 !default;
-$blue-color: #66689D !default;
-$grey: #C3C5CD !default;
-$light-grey: #F3F4F8 !default;
-$dark-grey: #9799A4 !default;
-
-$green-color-dark: #358a00 !default;
-$red-color-dark: #d22249 !default;
-$blue-color-dark: #51537f !default;
-
-$green-color-tr: rgba(53, 138, 0, 0) !default;
-$red-color-tr: rgba(210, 34, 73, 0) !default;
-$blue-color-tr: rgba(81, 83, 127, 0) !default;
-
-$main-color: #48BD00 !default;
-
+$text-color: #274646 !default;
+$titles-red: #C85664 !default;
+$titles-slider: #426667 !default;
+$title-header: #99E2DB !default;
 
 
 /// Breakpoints map

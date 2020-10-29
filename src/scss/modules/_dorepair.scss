@@ -1,0 +1,41 @@
+.dorepair {
+   
+    &__title {
+        width: 640px;
+    }
+    &__title-mod{
+        color: #FC9DA9;
+     }
+
+     &__text {
+         display: block;
+         font-family: 'Geometria';
+         font-weight: 400;
+         font-size: 30px;
+         line-height: 38px;
+         width: 192px;
+         margin: 30px 0 0 120px;
+         position: relative;
+
+         &:after {
+            position: absolute;
+            content: "Без нервов, предоплаты и задержек";
+            background: url('../../../assets/img/bgk-text-top.jpg') no-repeat;
+            background-position: 0 0;
+            background-size: 100%;
+            line-height: 38px;
+            width: 354px;
+            padding: 115px 76px 48px 85px;
+            height: 337px;
+            top: 0;
+            font-size: 30px;
+            font-weight: 400;
+            left: 0;
+        }
+         
+         
+     }
+
+}
+
+

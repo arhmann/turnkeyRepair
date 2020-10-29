@@ -14,3 +14,21 @@ input, textarea {
   font-family: $text-font-stack;
   font-size: 24px;
 }
+
+.h1 {
+  font-family: 'BebasNeue';
+  font-size: 65px;
+  font-weight: 700;
+  color: $title-header;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.h2 {
+  font-family: 'BebasNeue';
+  font-size: 55px;
+  font-weight: 700;
+  color: $titles-slider;
+  font-weight: bold;
+  line-height: 110%;
+}
