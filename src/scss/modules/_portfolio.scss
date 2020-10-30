@@ -1,9 +1,22 @@
 .portfolio {
 
+    padding-bottom: 100px;
+
+  &__title {
+    margin: 112px 0 0;
+    font-weight: 400;
+
+    .portfolio__title--bold {
+      font-weight: 700;
+    }
+  }
+
   &__slider {
+    display: flex;
+    margin-top: 30px;
 
     .port__imgs {
-        width: 600px;
+      width: 50%;
 
       .port__img-l {
         width: 58%;
@@ -14,29 +27,45 @@
         width: 40%;
         margin: 0 0 10px 0;
       }
-
     }
 
-    .port__img-bottom{
-        flex-wrap: nowrap;
-        
-        .img-bottom__img-l, .img-bottom__img-m, .img-bottom__img-r{
-            width: 32%;
-        }
+    .port__img-bottom {
+      flex-wrap: nowrap;
 
-        .img-bottom__img-l{
-            margin: 10px 0 0;
+      .img-bottom__img-l,
+      .img-bottom__img-m,
+      .img-bottom__img-r {
+        width: 32%;
+      }
 
-        }
+      .img-bottom__img-l {
+        margin: 10px 0 0;
+      }
 
-        .img-bottom__img-m{
-            margin: 10px 12px 0;
-        }
+      .img-bottom__img-m {
+        margin: 10px 12px 0;
+      }
 
-        .img-bottom__img-r{
-            margin: 10px 0 0 0;
-        }
+      .img-bottom__img-r {
+        margin: 10px 0 0 0;
+      }
     }
 
+    .portfolio__content {
+        width: 50%;
+        margin: 10px 0 0 50px;
+
+        .portfolio__metres, .portfolio__month , .portfolio__price {
+            flex-direction: column;
+        }
+
+        .portfolio__metres, .portfolio__month{
+            margin-right: 10px;
+        }
+    }
   }
+
+  .img--heigth {
+    height: 200px;
+}
 }
