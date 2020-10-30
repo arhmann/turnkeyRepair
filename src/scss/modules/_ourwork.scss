@@ -1,15 +1,63 @@
 .ourwork {
-    background: url("./../../../assets/img/bkg-ourworks.jpg") no-repeat;
-    background-size: 100%;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    background-position: 100%;
-   
+  background: url("./../../../assets/img/bkg-ourworks.jpg") no-repeat;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  background-position: 100%;
+  position: relative;
 
-    &__title {
-       
-        padding-top: 420px;
-    }
+  &::before{
+    position: absolute;
+    content: "";
+    background: url("./../../../assets/img/bkg-ourwork.png") no-repeat;
+    width: 634px;
+    height: 922px;
+    background-size: 634px 922px;
+    left: calc(50% - 700px);
+    bottom: 0;
+}
+
+  .container {
+    padding-left: 518px;
+  }
+
+  &__title {
+    font-weight: 400;
+    padding-top: 330px;
+    width: 500px;
+    margin-bottom: 55px;
+  }
+
+  &__bold {
+      font-weight: 700;
+  }
+
+  &__text{
+      width: 750px;
+      margin-bottom: 16px;
+  }
+
+  &__text-middle {
+      width: 640px;
+      margin-bottom: 40px;
+  }
+
+  &__text-btm {
+      display: flex;
+      margin-bottom: 49px;
+  }
+
+  &__text-left{
+    width: 180px;
+  }
+
+  &__text-right{
+    width: 480px;
+  }
+
+  &__btn-red {
+      margin-right: 47px;
+  }
 
 }
