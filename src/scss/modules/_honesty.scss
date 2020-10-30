@@ -1,0 +1,48 @@
+.honesty {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url("../../../assets/img/bkg-greetings.png") no-repeat;
+        color: $text-color;
+        background-position: 0 0;
+        background-size: 100%;
+        width: 693px;
+        height: 714px;
+        top: -62px;
+        right: 0;
+    }
+
+    
+  &__title {
+    margin-top: 750px;
+    width: 763px;
+
+    .honesty__title-text {
+      color: $titles-slider;
+      font-weight: 400;
+    }
+  }
+
+  &__text-top {
+    margin-top: 54px;
+    width: 600px;
+    font-size: 20px;
+
+    .honesty__text-top-bold{
+        font-weight: 700;
+    }
+  }
+
+  &__text-bottom{
+      margin-top: 34px;
+      width: 380px;
+
+      .honesty__text-bottom-bold{
+        font-weight: 700;
+    }
+  }
+
+
+}

@@ -6,25 +6,29 @@
 
   &__texts-wrapper {
     display: flex;
-    margin: 21px 0 0;
-    text-align: left;
-    justify-content: center;
+    margin: 21px 0 250px;
     position: relative;
+    width: 100%;
 
     .greeting__text {
       display: flex;
-      padding: 10px 16px;
-      width: 300px;
-      height: 330px;
+      padding: 6px 14px;
+      width: 20%;
+      
+    }
+
+    .greeting__text--first {
+      width: 42%;
     }
   }
 
   .greeting__line {
     position: absolute;
     border: 1px solid #c85664;
-    width: 960px;
+    width: 839px;
     background-color: #c85664;
     left: 0;
+    top: 1210px;
 
     &:after {
       content: "НО...";
@@ -40,5 +44,100 @@
 
   .greeting__conditions {
     margin: 200px 0 0;
+  }
+
+  .conditions {
+    &__left {
+      display: block;
+      margin: 0 50px 0 0;
+      position: relative;
+
+      &:after {
+        content: "Мы работаем уже более 8 лет";
+        position: absolute;
+        top: 176px;
+        left: 186px;
+        font-family: "BebasNeue";
+        line-height: 130%;
+        font-weight: 700;
+        font-size: 30px;
+        width: 175px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url("../../../assets/img/bkg-left.png") no-repeat;
+        color: $text-color;
+        background-position: 0 0;
+        background-size: 100%;
+        width: 301px;
+        height: 288px;
+        top: -21px;
+        left: 20px;
+      }
+    }
+
+    &__middle {
+      display: block;
+      margin: 0 50px 0 0;
+      position: relative;
+
+      &:after {
+        content: "Выполнили более 500 объектов";
+        position: absolute;
+        top: 179px;
+        left: 636px;
+        font-family: "BebasNeue";
+        line-height: 130%;
+        font-weight: 700;
+        font-size: 30px;
+        width: 200px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url("../../../assets/img/bkg-middle.png") no-repeat;
+        color: $text-color;
+        background-position: 0 0;
+        background-size: 100%;
+        width: 301px;
+        height: 288px;
+        top: -27px;
+        left: 487px;
+      }
+    }
+
+    &__right {
+      display: block;
+      margin: 0 50px 0 0;
+      position: relative;
+
+      &:after {
+        content: "Не готовы обманывать наших клиентов";
+        position: absolute;
+        top: 175px;
+        right: -94px;
+        font-family: "BebasNeue";
+        line-height: 130%;
+        font-weight: 700;
+        font-size: 30px;
+        width: 245px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url("../../../assets/img/bkg-right.png") no-repeat;
+        color: $text-color;
+        background-position: 0 0;
+        background-size: 100%;
+        width: 362px;
+        height: 315px;
+        top: -59px;
+        right: -62px;
+      }
+    }
   }
 }
