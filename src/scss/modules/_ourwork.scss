@@ -1,0 +1,15 @@
+.ourwork {
+    background: url("./../../../assets/img/bkg-ourworks.jpg") no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background-position: 100%;
+   
+
+    &__title {
+       
+        padding-top: 420px;
+    }
+
+}
