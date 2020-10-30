@@ -1,0 +1,42 @@
+.portfolio {
+
+  &__slider {
+
+    .port__imgs {
+        width: 600px;
+
+      .port__img-l {
+        width: 58%;
+        margin: 0 10px 10px 0;
+      }
+
+      .port__img-r {
+        width: 40%;
+        margin: 0 0 10px 0;
+      }
+
+    }
+
+    .port__img-bottom{
+        flex-wrap: nowrap;
+        
+        .img-bottom__img-l, .img-bottom__img-m, .img-bottom__img-r{
+            width: 32%;
+        }
+
+        .img-bottom__img-l{
+            margin: 10px 0 0;
+
+        }
+
+        .img-bottom__img-m{
+            margin: 10px 12px 0;
+        }
+
+        .img-bottom__img-r{
+            margin: 10px 0 0 0;
+        }
+    }
+
+  }
+}
