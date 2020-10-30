@@ -1,0 +1,46 @@
+.slide {
+  margin-top: 50px;
+
+  &__img {
+    width: 300px;
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    margin: 40px 0 23px 0;
+  }
+
+  &__items {
+      margin: 0 0 0 50px;
+      position: relative;
+
+  }
+
+  &__prices {
+    margin: 20px 0 0;
+  }
+
+  &__price-wrapper, &__deadlines {
+      flex-direction: column;
+  }
+
+  &__price-wrapper{
+      margin: 0 59px 0 48px;
+  }
+
+  &__deadlines{
+    margin: 1px 63px 0 0;
+  }
+
+  &__text-top {
+      color: #6FABA7;
+  }
+
+  &__text-btm{
+      color: $titles-red;
+  }
+
+}

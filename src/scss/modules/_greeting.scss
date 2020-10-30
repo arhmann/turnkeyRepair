@@ -14,7 +14,6 @@
       display: flex;
       padding: 6px 14px;
       width: 20%;
-      
     }
 
     .greeting__text--first {
@@ -25,7 +24,7 @@
   .greeting__line {
     position: absolute;
     border: 1px solid #c85664;
-    width: 839px;
+    width: calc(50% - 128px);
     background-color: #c85664;
     left: 0;
     top: 1210px;

@@ -15,20 +15,32 @@ input, textarea {
   font-size: 24px;
 }
 
-.h1 {
+.h1, h2, .h3, .text--bold{
   font-family: 'BebasNeue';
-  font-size: 65px;
   font-weight: 700;
+}
+
+.h1 {
+  font-size: 65px;
   color: $title-header;
   line-height: 120%;
-  font-weight: bold;
 }
 
 .h2 {
-  font-family: 'BebasNeue';
   font-size: 55px;
-  font-weight: 700;
   color: $titles-slider;
-  font-weight: bold;
   line-height: 110%;
+}
+
+.h3 {
+  font-size: 30px;
+  color: #6FABA7;
+  line-height: 110%;
+}
+
+.text--bold{
+
+ font-size: 36px;
+ line-height: 46px;
+
 }

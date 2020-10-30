@@ -1,0 +1,24 @@
+.btn--red, .btn--green {
+    font-family: "BebasNeue";
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    border-radius: 100px;
+    width: 300px;
+    height: 90px;
+}
+
+
+.btn--red {
+  background: #C85664;
+  box-shadow: 0px 4px 0px #C85664, inset 0px -5px 40px #FC9DA9;
+  
+  
+}
+
+.btn--green{
+    background: #5E8D8C;
+    box-shadow: 0px 4px 0px #426667, inset 0px -3px 40px rgba(153, 226, 219, 0.7);
+}
