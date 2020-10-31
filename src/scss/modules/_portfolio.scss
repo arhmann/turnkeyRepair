@@ -1,6 +1,5 @@
 .portfolio {
-
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 
   &__title {
     margin: 112px 0 0;
@@ -52,20 +51,54 @@
     }
 
     .portfolio__content {
-        width: 50%;
-        margin: 10px 0 0 50px;
+      width: 50%;
+      margin: 10px 0 0 50px;
 
-        .portfolio__metres, .portfolio__month , .portfolio__price {
-            flex-direction: column;
+      .portfolio__prices-wrapper{
+        margin-bottom: 27px;
+      }
+
+      .portfolio__metres,
+      .portfolio__month,
+      .portfolio__price {
+        flex-direction: column;
+      }
+
+      .portfolio__metres,
+      .portfolio__month {
+        margin-right: 10px;
+      }
+
+      .slide__text-top{
+        width: 90px;
+      }
+
+      .text--bold{
+        color: $titles-red;
+      }
+
+      .portfolio__metres, .portfolio__month{
+        margin-right: 95px;
+
+      }
+
+      .portfolio__video-wrapper{
+        display: flex;
+        margin: 42px 0 46px;
+
+        .portfolio__video-left{
+          margin-right: 35px;
         }
 
-        .portfolio__metres, .portfolio__month{
-            margin-right: 10px;
+        .video--left, .video--right{
+          border-radius: 8px;
         }
+
+      }
     }
   }
 
   .img--heigth {
     height: 200px;
-}
+  }
 }
