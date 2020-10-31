@@ -38,6 +38,10 @@
       margin-bottom: 16px;
   }
 
+  &__text-bold {
+    font-weight: 700;
+  }
+
   &__text-middle {
       width: 640px;
       margin-bottom: 40px;
@@ -53,7 +57,8 @@
   }
 
   &__text-right{
-    width: 480px;
+    width: 490px;
+    font-weight: 700;
   }
 
   &__btn-red {
