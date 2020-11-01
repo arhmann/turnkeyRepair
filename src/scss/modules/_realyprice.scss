@@ -28,16 +28,19 @@
     left: 0;
   }
 
- .item--2, .item--3{
-          opacity: 0;
+  .item-2, .item-3{
+    opacity: 0;
   }
 
   .not-active {
-      opacity: 0;
-  }
+    opacity: 0;
+ }
+ 
+ .active {
+    opacity: 1;
+    transition: .2s;
+ }
 
-  .active {
-      opacity: 1;
-      transition: .2s;
-  }
 }
+
+

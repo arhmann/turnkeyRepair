@@ -14,17 +14,19 @@ buttons.forEach((btn) =>
       slide.classList.add("not-active");
 
       if (event.target.attributes[1].name == "data-btnleft") {
-        btnLeft.classList.add("active")
         btnMiddle.classList.remove("active");
         btnRight.classList.remove("active");
+        btnLeft.classList.add("active")
+        
       } else if (event.target.attributes[1].name == "data-btnmiddle"){
-        btnMiddle.classList.add("active")
         btnLeft.classList.remove("active")
         btnRight.classList.remove("active");
+        btnMiddle.classList.add("active")
+        
       } else if (event.target.attributes[1].name == "data-btnright"){
-        btnRight.classList.add("active")
         btnMiddle.classList.remove("active")
         btnLeft.classList.remove("active")
+        btnRight.classList.add("active")
 
       }
 
