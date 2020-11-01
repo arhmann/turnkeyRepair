@@ -1,24 +1,43 @@
 .realyprice {
+  &__title {
+    margin-top: 200px;
+    width: 776px;
 
-    &__title{
-        margin-top: 200px;
-        width: 776px;
-
-        .realyprice__title-reg{
-            font-weight: 400;
-        }
+    .realyprice__title-reg {
+      font-weight: 400;
     }
+  }
 
-    .nav-items{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 50px;
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
 
-        &-btn{
-            width: 32%;
-
-        }
+    &-btn {
+      width: 32%;
     }
-   
+  }
+  .slider__wrapper {
+    position: relative;
+    height: 600px;
+  }
+  .slider__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+ .item--2, .item--3{
+          opacity: 0;
+  }
+
+  .not-active {
+      opacity: 0;
+  }
+
+  .active {
+      opacity: 1;
+      transition: .2s;
+  }
 }

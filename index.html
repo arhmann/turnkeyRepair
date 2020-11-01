@@ -106,50 +106,120 @@
                         ремонта</span></h2>
 
                 <div class="realyprice__nav-items nav-items">
-                    <button class="nav-items-btn btn-slider-top hover--nav-btn"> Капитальный ремонт</button>
-                    <button class="nav-items-btn btn-slider-top hover--nav-btn"> Евроремонт</button>
-                    <button class="nav-items-btn btn-slider-top hover--nav-btn"> Дизайнерский ремонт</button>
+                    <button class="nav-items-btn btn-slider-top hover--nav-btn" data-btnleft="btn-left"> Капитальный ремонт</button>
+                    <button class="nav-items-btn btn-slider-top hover--nav-btn" data-btnmiddle="btn-middle"> Евроремонт</button>
+                    <button class="nav-items-btn btn-slider-top hover--nav-btn" data-btnright="btn-right"> Дизайнерский ремонт</button>
                 </div>
 
-                <div class="realyprice__slide slide row">
+                <div class="slider__wrapper">
 
-                    <figure class="slide__imgs">
-                        <img class="slide__img" src="./assets/img/slide1@1x.jpg" alt="slide"
-                            srcset="./assets/img/slide1@2x.jpg">
-                        <img class="slide__img" src="./assets/img/slide2@1x.jpg" alt="slide"
-                            srcset="./assets/img/slide2@2x.jpg">
-                    </figure>
+                    <div class="realyprice__slide slide slider__item row" id="item-1">
 
-                    <div class="slide__content">
-                        <h3 class="slide__title h3">Дома старого фонда, не старше 1950-х годов</h3>
-                        <ul class="slide__items">
-                            <li class="slide__item dots">Комплексный демонтаж</li>
-                            <li class="slide__item dots">Комплексный демонтаж</li>
-                            <li class="slide__item dots">Комплексный демонтаж</li>
-                            <li class="slide__item dots">Комплексный демонтаж</li>
-                            <li class="slide__item dots">Комплексный демонтаж</li>
-                            <li class="slide__item">Комплексный демонтаж</li>
-                        </ul>
+                        <figure class="slide__imgs">
+                            <img class="slide__img" src="./assets/img/slide1@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide1@2x.jpg">
+                            <img class="slide__img" src="./assets/img/slide2@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide2@2x.jpg">
+                        </figure>
 
-                        <div class="slide__prices row">
-
-                            <div class="slide__price-wrapper row">
-                                <span class="slide__text-top">Стоимость</span>
-                                <span class="slide__text-btm">от <span class="text--bold">10 000</span>
-                                    руб/м<sub>2</sub></span>
+                        <div class="slide__content">
+                            <h3 class="slide__title h3">Дома старого фонда, не старше 1950-х годов</h3>
+                            <ul class="slide__items">
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item">Комплексный демонтаж</li>
+                            </ul>
+                            <div class="slide__prices row">
+                                <div class="slide__price-wrapper row">
+                                    <span class="slide__text-top">Стоимость</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">10 000</span>
+                                        руб/м<sub>2</sub></span>
+                                </div>
+                                <div class="slide__deadlines row">
+                                    <span class="slide__text-top">Скроки</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">2</span>
+                                        месяцев</span>
+                                </div>
+                                <button class="slide__btn btn--red hover--btn">Нужен такой ремонт?</button>
                             </div>
-
-                            <div class="slide__deadlines row">
-                                <span class="slide__text-top">Скроки</span>
-                                <span class="slide__text-btm">от <span class="text--bold">2</span> месяцев</span>
-                            </div>
-
-                            <button class="slide__btn btn--red hover--btn">Нужен такой ремонт?</button>
-
                         </div>
-
                     </div>
+
+                    <div class="realyprice__slide slide slider__item row" id="item-2">
+
+                        <figure class="slide__imgs">
+                            <img class="slide__img" src="./assets/img/slide-1@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide-1@2x.jpg">
+                            <img class="slide__img" src="./assets/img/slide-2@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide-2@2x.jpg">
+                        </figure>
+
+                        <div class="slide__content">
+                            <h3 class="slide__title h3">Дома старого фонда, не старше 1950-х годов</h3>
+                            <ul class="slide__items">
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item">Комплексный демонтаж</li>
+                            </ul>
+                            <div class="slide__prices row">
+                                <div class="slide__price-wrapper row">
+                                    <span class="slide__text-top">Стоимость</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">10 000</span>
+                                        руб/м<sub>2</sub></span>
+                                </div>
+                                <div class="slide__deadlines row">
+                                    <span class="slide__text-top">Скроки</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">2</span>
+                                        месяцев</span>
+                                </div>
+                                <button class="slide__btn btn--red hover--btn">Нужен такой ремонт?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="realyprice__slide slide slider__item row" id="item-3">
+
+                        <figure class="slide__imgs">
+                            <img class="slide__img" src="./assets/img/slide-3@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide-3@2x.jpg">
+                            <img class="slide__img" src="./assets/img/slide-4@1x.jpg" alt="slide"
+                                srcset="./assets/img/slide-4@2x.jpg">
+                        </figure>
+
+                        <div class="slide__content">
+                            <h3 class="slide__title h3">Дома старого фонда, не старше 1950-х годов</h3>
+                            <ul class="slide__items">
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item dots">Комплексный демонтаж</li>
+                                <li class="slide__item">Комплексный демонтаж</li>
+                            </ul>
+                            <div class="slide__prices row">
+                                <div class="slide__price-wrapper row">
+                                    <span class="slide__text-top">Стоимость</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">10 000</span>
+                                        руб/м<sub>2</sub></span>
+                                </div>
+                                <div class="slide__deadlines row">
+                                    <span class="slide__text-top">Скроки</span>
+                                    <span class="slide__text-btm">от <span class="text--bold">2</span>
+                                        месяцев</span>
+                                </div>
+                                <button class="slide__btn btn--red hover--btn">Нужен такой ремонт?</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -176,7 +246,8 @@
 
                 <div class="ourwork__btns">
                     <button class="ourwork__btn-red btn--red hover--btn">Хочу посмотреть на выполненные работы</button>
-                    <button class="ourwork__btn-green btn--green hover--btn">Хочу пообщаться с реальными клиентами</button>
+                    <button class="ourwork__btn-green btn--green hover--btn">Хочу пообщаться с реальными
+                        клиентами</button>
                 </div>
             </div>
         </section>
@@ -185,7 +256,8 @@
             <div class="container row">
 
                 <div class="portfolio__content-nav">
-                    <h2 class="portfolio__title h2">Пока вы думаете, <span class="portfolio__title--bold">посмотрите, что именно мы
+                    <h2 class="portfolio__title h2">Пока вы думаете, <span class="portfolio__title--bold">посмотрите,
+                            что именно мы
                             отфотографировали</span></h2>
                     <button class="portfolio__btn">1\3</button>
                 </div>
@@ -221,17 +293,17 @@
 
                     <div class="portfolio__content">
                         <div class="portfolio__prices-wrapper row">
-                            <div class="portfolio__metres row"> 
+                            <div class="portfolio__metres row">
                                 <span class="slide__text-top">Площадь помещения</span> <span class="text--bold">
-                                87 м2</span> 
+                                    87 м2</span>
                             </div>
-                            <div class="portfolio__month row"> 
-                                <span class="slide__text-top">Срок ремонта</span> 
-                                <span class="text--bold">2 мес</span> 
+                            <div class="portfolio__month row">
+                                <span class="slide__text-top">Срок ремонта</span>
+                                <span class="text--bold">2 мес</span>
                             </div>
-                            <div class="portfolio__price row"> 
-                                <span class="slide__text-top">Стоимость ремонта</span> 
-                                <span class="text--bold">150 000 руб</span> 
+                            <div class="portfolio__price row">
+                                <span class="slide__text-top">Стоимость ремонта</span>
+                                <span class="text--bold">150 000 руб</span>
                             </div>
                         </div>
 
@@ -245,10 +317,16 @@
 
                         <div class="portfolio__video-wrapper">
                             <div class="portfolio__video-left">
-                                <iframe class="video--left" width="100%" height="100%" src="https://www.youtube.com/embed/OxZ87JaGYXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="video--left" width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/OxZ87JaGYXk" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="portfolio__video-right">
-                                <iframe class="video--right" width="100%" height="100%" src="https://www.youtube.com/embed/_YfS8rilkO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+                                <iframe class="video--right" width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/_YfS8rilkO4" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></iframe>
                             </div>
                         </div>
 
@@ -299,7 +377,7 @@
         </svg>
 
     </div>
-    <script src="js/script.min.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
