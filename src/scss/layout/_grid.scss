@@ -10,20 +10,3 @@
  // flex: 0 1 auto;
   flex-wrap: wrap;
 }
-
-@media only screen and (max-width: $desktop-min) {
-  .container {
-    max-width: 912px;
-  }
-}
-
-@media only screen and (max-width: $desktop) {
-  .container {
-    max-width: 748px;
-  }
-}
-@media only screen and (max-width: $tablet) {
-  .container {
-    max-width: 100%;
-  }
-}

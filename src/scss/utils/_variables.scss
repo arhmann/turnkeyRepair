@@ -10,19 +10,3 @@ $titles-slider: #426667 !default;
 $title-header: #99E2DB !default;
 
 
-/// Breakpoints map
-$desktop-max: 1439px !default;
-$desktop-min: 1279px !default;
-$desktop: 991px !default;
-$tablet: 767px !default;
-$mobile: 374px !default;
-
-
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: 'assets/' !default;
-
-$easeInOutSine: cubic-bezier(0.785, 0.135, 0.15, 0.86);
