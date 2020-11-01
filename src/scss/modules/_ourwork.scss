@@ -2,7 +2,7 @@
   background: url("./../../../assets/img/bkg-ourworks.jpg") no-repeat;
   background-size: 100%;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   left: 0;
   background-position: 100%;
   position: relative;
@@ -20,6 +20,10 @@
 
   .container {
     padding-left: 518px;
+
+    .ourwork__btns {
+      padding-bottom: 70px;
+    }
   }
 
   &__title {
