@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header lock-padding">
         <div class="container row">
 
             <div class="header__svg-wrapper">
@@ -21,15 +21,15 @@
 
             <nav class="header__nav-wrapper">
                 <ul class="header__items row">
-                    <li> <a href="" class="header__link hover--nav">цены</a> </li>
-                    <li> <a href="" class="header__link hover--nav">работы</a> </li>
-                    <li> <a href="" class="header__link hover--nav">гарантии</a> </li>
-                    <li> <a href="" class="header__link hover--nav">бонусы</a> </li>
-                    <li> <a href="" class="header__link hover--nav">рассчет</a> </li>
+                    <li> <a href="#popup" class="header__link hover--nav">цены</a> </li>
+                    <li> <a href="#popup" class="header__link hover--nav">работы</a> </li>
+                    <li> <a href="#popup" class="header__link hover--nav">гарантии</a> </li>
+                    <li> <a href="#popup" class="header__link hover--nav">бонусы</a> </li>
+                    <li> <a href="#popup" class="header__link hover--nav">рассчет</a> </li>
                 </ul>
             </nav>
 
-            <button class="header__btn hover--nav popap-link">
+            <button class="header__btn hover--nav  popup-link">
                 Обратный звонок
             </button>
 
@@ -143,7 +143,7 @@
                                     <span class="slide__text-btm">от <span class="text--bold">2</span>
                                         месяцев</span>
                                 </div>
-                                <button class="slide__btn btn--red hover--btn">Нужен такой ремонт?</button>
+                                <button id="#popup" class="slide__btn btn--red hover--btn  popup-link">Нужен такой ремонт?</button>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                                     <span class="slide__text-btm">от <span class="text--bold">2</span>
                                         месяцев</span>
                                 </div>
-                                <button class="slide__btn btn--red hover--btn popap-link">Нужен такой ремонт?</button>
+                                <button class="slide__btn btn--red hover--btn popup-link">Нужен такой ремонт?</button>
                             </div>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                                     <span class="slide__text-btm">от <span class="text--bold">2</span>
                                         месяцев</span>
                                 </div>
-                                <button class="slide__btn btn--red hover--btn popap-link">Нужен такой ремонт?</button>
+                                <button class="slide__btn btn--red hover--btn popup-link">Нужен такой ремонт?</button>
                             </div>
                         </div>
                     </div>
@@ -245,8 +245,8 @@
                 </div>
 
                 <div class="ourwork__btns">
-                    <button class="ourwork__btn-red btn--red hover--btn popap-link">Хочу посмотреть на выполненные работы</button>
-                    <button class="ourwork__btn-green btn--green hover--btn popap-link">Хочу пообщаться с реальными
+                    <button class="ourwork__btn-red btn--red hover--btn popup-link">Хочу посмотреть на выполненные работы</button>
+                    <button class="ourwork__btn-green btn--green hover--btn popup-link">Хочу пообщаться с реальными
                         клиентами</button>
                 </div>
             </div>
@@ -330,7 +330,7 @@
                             </div>
                         </div>
 
-                        <button class="btn--red hover--btn popap-link">Нравится стиль ремонта?</button>
+                        <button class="btn--red hover--btn popup-link">Нравится стиль ремонта?</button>
                     </div>
 
                 </div>
@@ -381,7 +381,7 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a class="popup__close close-popup">X</a>
-                <h4 class="popup__tetle">Заявка на образный звонок</h4>
+                <h4 class="popup__title">Заявка на образный звонок</h4>
                 <p class="popup__text">Оставьте свои контактные данные и мы перезвоним вам в удобное время</p>
                 <form class="popup__form">
 

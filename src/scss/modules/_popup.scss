@@ -8,6 +8,8 @@
   z-index: 2;
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   transition: all 0.8s ease 0s;
 }
 
@@ -27,6 +29,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
+  transition: all 0.8s ease 0s;
 }
 
 .popup__content {
@@ -37,7 +40,7 @@
   position: relative;
   transition: all 0.8s ease 0s;
   opacity: 0;
-  transform: translate(0px, -100%);
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
 
@@ -49,7 +52,7 @@
 
 }
 
-.popup__tetle {
+.popup__title {
   font-size: 55px;
   font-family: "BebasNeue";
   font-weight: 700;
