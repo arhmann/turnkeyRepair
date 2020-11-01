@@ -1,5 +1,5 @@
 .ourwork {
-  background: url("./../../../assets/img/bkg-ourworks.jpg") no-repeat;
+  background: url("./assets/img/bkg-ourworks.jpg") no-repeat;
   background-size: 100%;
   width: 100vw;
   height: 100%;
@@ -10,7 +10,7 @@
   &::before{
     position: absolute;
     content: "";
-    background: url("./../../../assets/img/bkg-ourwork.png") no-repeat;
+    background: url("./assets/img/bkg-ourwork.png") no-repeat;
     width: 634px;
     height: 922px;
     background-size: 634px 922px;
