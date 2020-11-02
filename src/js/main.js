@@ -30,6 +30,48 @@ buttons.forEach((btn) =>
   })
 );
 
+const btns = document.querySelectorAll('.btn');
+const btnClose = document.querySelector('.popup__close');
+const popup = document.querySelector('.popup');
+const popupBody = document.querySelector('.popup__body');
+let xhr = new XMLHttpRequest ();
+
+btns.forEach((btn) => 
+
+   btn.addEventListener('click', (e) => {
+    popup.style.display = "block";
+    popupBody.style.opacity = "1";
+    setAJAX();
+   })
+);
+
+btnClose.addEventListener('click', (e) => {
+  popup.style.display = "none";
+});
+
+window.addEventListener('click', (e) => {
+  console.log(e.target)
+  if (e.target === popupBody) {
+    popup.style.display = "none";
+    popupBody.style.opacity = 0;
+    setAJAX();
+  }
+
+});
+
+const setAJAX = () => {
+  xhr.open("GET", "https://reqres.in/api/products/3", true);
+  xhr.send();
+  xhr.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      this.responseText;
+    }
+  };
+};
+
+
+
+/*
 const popupLinks = document.querySelectorAll(".popup-link");
 const body = document.querySelector("body");
 const lockPadding = document.querySelectorAll(".lock-padding");
@@ -127,3 +169,4 @@ function bodyUnLock () {
     unlock = true;
   }, timeout);
 }
+*/

@@ -6,15 +6,16 @@
   top: 0;
   left: 0;
   z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
+  display: none;
+  //visibility: hidden;
+  //overflow-y: auto;
+  //overflow-x: hidden;
   transition: all 0.8s ease 0s;
 }
 
+/*
 .popup.open {
-    opacity: 1;
+   opacity: 1;
     visibility: visible;
 }
 
@@ -22,6 +23,7 @@
     transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
     opacity: 1;
 }
+*/
 
 .popup__body {
   min-height: 100%;
@@ -30,6 +32,7 @@
   justify-content: center;
   padding: 30px 10px;
   transition: all 0.8s ease 0s;
+ opacity: 0;
 }
 
 .popup__content {
@@ -39,8 +42,8 @@
   padding: 60px;
   position: relative;
   transition: all 0.8s ease 0s;
-  opacity: 0;
-  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  opacity: 1;
+  //transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
 
